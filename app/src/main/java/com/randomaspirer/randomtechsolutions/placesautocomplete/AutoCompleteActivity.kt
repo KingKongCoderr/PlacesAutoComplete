@@ -19,13 +19,8 @@ class AutoCompleteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auto_complete)
-
-    }
-
-    override fun onStart() {
-        super.onStart()
         autocompleteFragment =
-            fragmentManager.findFragmentById(R.id.place_autocomplete_fragment) as PlaceAutocompleteFragment //as keyword is unsafe type cast operator
+                fragmentManager.findFragmentById(R.id.place_autocomplete_fragment) as PlaceAutocompleteFragment //as keyword is unsafe type cast operator
         autocompleteFragment.setOnPlaceSelectedListener(object : PlaceSelectionListener {
             override fun onPlaceSelected(place: Place) {
                 // TODO: Get info about the selected place.
@@ -38,6 +33,10 @@ class AutoCompleteActivity : AppCompatActivity() {
             }
         })
 
+    }
+
+    override fun onStart() {
+        super.onStart()
     }
 
 }
