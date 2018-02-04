@@ -9,14 +9,25 @@
         android:layout_height="match_parent"
         tools:context="com.randomaspirer.randomtechsolutions.placesautocomplete.MainActivity">
 
-        <TextView
+        <Button
+            android:id="@+id/defaultAutocomplete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/enterLabel"
-            android:textSize="30sp"
-            app:layout_constraintStart_toEndOf="parent"
+            android:text="Default Autocomplete"
+            android:onClick="openAutoCompleteFragment"
             app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/enterLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Enter the address"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/defaultAutocomplete"
         />
 
 
