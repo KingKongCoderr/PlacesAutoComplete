@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.randomaspirer.randomtechsolutions.placesautocomplete">
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyANHCm7_5RazSlz1GwgJnAIcavGDcY_N6o"/>
+
 
     <application
         android:allowBackup="true"
@@ -15,6 +19,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".AutoCompleteActivity">
         </activity>
     </application>
 

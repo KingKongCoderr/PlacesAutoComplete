@@ -1,5 +1,6 @@
 package com.randomaspirer.randomtechsolutions.placesautocomplete
 
+import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     fun openAutoCompleteFragment(view : View) {
         if(view.id == R.id.defaultAutocomplete){
             //call fragment
+            var defaultAutocompleteIntent : Intent = Intent(this,AutoCompleteActivity::class.java)
+            startActivity(defaultAutocompleteIntent)
         }
     }
 
