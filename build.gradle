@@ -5,6 +5,7 @@ buildscript {
         playservicesVersion = "11.8.0"
         kotlin_version = "1.2.21"
         buildGradleVersion = "3.0.1"
+        appCompatVersion = "26.1.0"
     }
     repositories {
         google()

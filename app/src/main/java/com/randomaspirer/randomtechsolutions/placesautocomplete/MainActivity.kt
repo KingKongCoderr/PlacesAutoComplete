@@ -9,6 +9,8 @@ import com.randomaspirer.randomtechsolutions.placesautocomplete.databinding.Acti
 
 class MainActivity : AppCompatActivity() {
 
+
+
     private lateinit var activityMainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
